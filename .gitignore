@@ -1,3 +1,4 @@
 logging/*
 .vscode/*
 .ipynb_checkpoints/*
+/data/*
