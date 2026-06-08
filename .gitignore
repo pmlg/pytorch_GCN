@@ -2,4 +2,6 @@ logging/*
 .vscode/*
 .ipynb_checkpoints/*
 /data/*
+__pycache__/
+checkpoints/
 .env
