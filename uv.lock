@@ -1124,6 +1124,15 @@ wheels = [
 ]
 
 [[package]]
+name = "pyg-lib"
+version = "0.7.0+pt212cu132"
+source = { registry = "https://data.pyg.org/whl/torch-2.12.0+cu132.html" }
+wheels = [
+    { url = "https://data.pyg.org/whl/torch-2.12.0%2Bcu132/pyg_lib-0.7.0%2Bpt212cu132-cp312-cp312-win_amd64.whl" },
+    { url = "https://data.pyg.org/whl/torch-2.12.0%2Bcu132/pyg_lib-0.7.0%2Bpt212cu132-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl" },
+]
+
+[[package]]
 name = "pygments"
 version = "2.20.0"
 source = { registry = "https://pypi.org/simple" }
@@ -1174,6 +1183,7 @@ dependencies = [
     { name = "numpy" },
     { name = "pandas" },
     { name = "pyarrow" },
+    { name = "pyg-lib" },
     { name = "python-dotenv" },
     { name = "scikit-learn" },
     { name = "scipy" },
@@ -1181,6 +1191,8 @@ dependencies = [
     { name = "torch", version = "2.12.0", source = { registry = "https://pypi.org/simple" }, marker = "sys_platform == 'darwin'" },
     { name = "torch", version = "2.12.0+cu132", source = { registry = "https://download.pytorch.org/whl/cu132" }, marker = "sys_platform != 'darwin'" },
     { name = "torch-geometric" },
+    { name = "torch-scatter" },
+    { name = "torch-sparse" },
     { name = "torchvision", version = "0.27.0", source = { registry = "https://pypi.org/simple" }, marker = "sys_platform == 'darwin'" },
     { name = "torchvision", version = "0.27.0+cu132", source = { registry = "https://download.pytorch.org/whl/cu132" }, marker = "sys_platform != 'darwin'" },
     { name = "tqdm" },
@@ -1196,12 +1208,15 @@ requires-dist = [
     { name = "numpy", specifier = ">=2.4.6" },
     { name = "pandas", specifier = ">=3.0.3" },
     { name = "pyarrow", specifier = ">=24.0.0" },
+    { name = "pyg-lib", specifier = "==0.7.0+pt212cu132" },
     { name = "python-dotenv", specifier = ">=1.2.2" },
     { name = "scikit-learn", specifier = ">=1.9.0" },
     { name = "scipy", specifier = ">=1.17.1" },
     { name = "seaborn", specifier = ">=0.13.2" },
     { name = "torch", specifier = ">=2.12.0" },
     { name = "torch-geometric", specifier = ">=2.8.0" },
+    { name = "torch-scatter", specifier = "==2.1.2+pt212cu132" },
+    { name = "torch-sparse", specifier = "==0.6.18+pt212cu132" },
     { name = "torchvision", specifier = ">=0.27.0" },
     { name = "tqdm", specifier = ">=4.68.1" },
     { name = "xgboost", specifier = ">=3.2.0" },
@@ -1433,6 +1448,25 @@ dependencies = [
 ]
 wheels = [
     { url = "https://files.pythonhosted.org/packages/ab/68/71b142d713c5449b4b3446233d85dc711f63c42d7768b28c690ff55bc181/torch_geometric-2.8.0-py3-none-any.whl", hash = "sha256:1f62e415a2e9ee69d34617d1b0b230e9d9040f51809b96e801e742770fd4dada", size = 1325330, upload-time = "2026-06-05T21:13:18.257Z" },
+]
+
+[[package]]
+name = "torch-scatter"
+version = "2.1.2+pt212cu132"
+source = { registry = "https://data.pyg.org/whl/torch-2.12.0+cu132.html" }
+wheels = [
+    { url = "https://data.pyg.org/whl/torch-2.12.0%2Bcu132/torch_scatter-2.1.2%2Bpt212cu132-cp312-cp312-linux_x86_64.whl" },
+]
+
+[[package]]
+name = "torch-sparse"
+version = "0.6.18+pt212cu132"
+source = { registry = "https://data.pyg.org/whl/torch-2.12.0+cu132.html" }
+dependencies = [
+    { name = "scipy" },
+]
+wheels = [
+    { url = "https://data.pyg.org/whl/torch-2.12.0%2Bcu132/torch_sparse-0.6.18%2Bpt212cu132-cp312-cp312-linux_x86_64.whl" },
 ]
 
 [[package]]

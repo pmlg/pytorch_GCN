@@ -16,8 +16,11 @@ dependencies = [
     "scikit-learn>=1.9.0",
     "scipy>=1.17.1",
     "seaborn>=0.13.2",
+    "pyg-lib==0.7.0+pt212cu132",
     "torch>=2.12.0",
     "torch-geometric>=2.8.0",
+    "torch-scatter==2.1.2+pt212cu132",
+    "torch-sparse==0.6.18+pt212cu132",
     "torchvision>=0.27.0",
     "tqdm>=4.68.1",
     "xgboost>=3.2.0",
@@ -25,6 +28,7 @@ dependencies = [
 
 [tool.uv]
 index-strategy = "unsafe-best-match"
+find-links = ["https://data.pyg.org/whl/torch-2.12.0+cu132.html"]
 
 [[tool.uv.index]]
 url = "https://download.pytorch.org/whl/cu132"
