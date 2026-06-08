@@ -4,3 +4,4 @@ logging/*
 /data/*
 __pycache__/
 checkpoints/
+.env

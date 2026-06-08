@@ -1,0 +1,31 @@
+[project]
+name = "pytorch-gcn"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "ipykernel>=7.2.0",
+    "kumoai>=2.22.0",
+    "matplotlib>=3.10.9",
+    "networkx>=3.6.1",
+    "numpy>=2.4.6",
+    "pandas>=3.0.3",
+    "pyarrow>=24.0.0",
+    "python-dotenv>=1.2.2",
+    "scikit-learn>=1.9.0",
+    "scipy>=1.17.1",
+    "seaborn>=0.13.2",
+    "torch>=2.12.0",
+    "torch-geometric>=2.8.0",
+    "torchvision>=0.27.0",
+    "tqdm>=4.68.1",
+    "xgboost>=3.2.0",
+]
+
+[tool.uv]
+index-strategy = "unsafe-best-match"
+
+[[tool.uv.index]]
+url = "https://download.pytorch.org/whl/cu132"
+default = false
